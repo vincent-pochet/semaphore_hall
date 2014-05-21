@@ -16,9 +16,7 @@ class Message
   def message
     ERB.new(
     <<-END_TEMPLATE
-<%= status_icon %> [<%= @data['project_name'] %>/<%= @data['branch_name'] %>] <%= @data['result'].capitalize %>:
-<%= @data['commit']['message'] %> - <%= @data['commit']['author_name'] %>
-(<a href=\"<%= @data['build_url'] %>\"><%= @data['build_url'] %></a>)
+<%= status_icon %> [<%= @data['project_name'] %>/<%= @data['branch_name'] %>] <%= @data['result'].capitalize %>: <%= @data['commit']['message'] %> - <%= @data['commit']['author_name'] %> (<a href=\"<%= @data['build_url'] %>\"><%= @data['build_url'] %></a>)
     END_TEMPLATE
     ).result(binding)
   end
