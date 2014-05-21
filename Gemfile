@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'sinatra', '~> 1.4.5'
+gem 'coveralls', require: false
 
 group :test do
   gem 'rake'

@@ -1,3 +1,6 @@
+require 'coveralls'
+Coveralls.wear!
+
 # Set the rack environment to `test`
 ENV["RACK_ENV"] = "test"
 
