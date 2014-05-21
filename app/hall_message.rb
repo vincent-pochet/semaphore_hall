@@ -6,7 +6,7 @@ class HallMessage
     @semaphore = semaphore
   end
 
-  def hall_url(token)
+  def hall_url
     @hall_url ||= "https://hall.com/api/1/services/generic/#{@token}"
   end
 
