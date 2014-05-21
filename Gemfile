@@ -1,10 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'sinatra', '~> 1.4.5'
-gem 'coveralls', require: false
+gem 'rake'
 
-group :test do
-  gem 'rake'
-  gem 'rspec'
-  gem "rack-test", "~> 0.6.1"
-end
+gem 'coveralls', require: false
+gem 'rspec', require: false
+gem "rack-test", "~> 0.6.1", require: false
