@@ -1,8 +1,0 @@
-development:
-  hall_url: 'http://0.0.0.0:9292/debug'
-
-production:
-  hall_url: 'http://0.0.0.0:9292/debug'
-
-test:
-  hall_url: 'http://0.0.0.0:9292/debug'
